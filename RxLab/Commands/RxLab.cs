@@ -43,6 +43,8 @@ namespace RxLab.Commands
 
         public static string EventLogWithTx()
         {
+            //http://blogs.endjin.com/2014/05/event-stream-manipulation-using-rx-part-2/
+
             //NuGet package Tx to read from Windows Performance counters
             var perfCounterStream = PerfCounterObservable.FromRealTime(TimeSpan.FromSeconds(1),
                                                                         new[]
